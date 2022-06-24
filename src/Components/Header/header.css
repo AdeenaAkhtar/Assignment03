@@ -1,0 +1,138 @@
+header{
+    margin-bottom: 40px;
+}
+.header *{
+    z-index: 99;
+    background-color: white;
+}
+
+.header-left
+{
+    position: fixed;
+    width:100%;
+    float:left;
+    text-align:center;
+    -webkit-box-shadow: 0 8px 6px -6px darkgreen;
+    -moz-box-shadow: 0 8px 6px -6px darkgreen;
+    box-shadow: 0 8px 6px -6px darkgreen;
+}
+.logo
+{
+    margin: 10px 0px;
+    width:30%;
+    float:left;
+}
+.logo img{
+    height: 25px;
+    transition:1s;
+}
+.logo h1
+{
+    display: inline;
+    cursor:pointer;
+    transition:1s;
+    color:black;
+}
+.logo h1:hover
+{
+    text-shadow:
+      0 0 10px darkgreen,
+      0 0 21px darkgreen,
+      0 0 42px darkgreen,
+      0 0 82px #E2D0D3,
+      0 0 92px #E2D0D3,
+      0 0 102px #E2D0D3,
+      0 0 151px #E2D0D3;
+}
+.menu
+{
+    margin: 10px 0px;
+    float:left;
+    width:70%;
+}
+.menu ul
+{
+    margin-right: 10%;
+    padding: 0;
+    float:right;
+    text-align: center;
+}
+.menu ul li
+{
+    cursor:pointer;
+    list-style-type:none;
+    display:inline-block;
+    padding:8px;
+    margin-right: 10px;
+}
+.menu ul li a
+{
+    text-decoration:none;
+    color:black;
+    font-size:15x;
+}
+.menu ul li a:hover
+{
+    text-shadow:
+      0 0 10px darkgreen,
+      0 0 21px darkgreen,
+      0 0 42px darkgreen,
+      0 0 82px #E2D0D3,
+      0 0 92px #E2D0D3,
+      0 0 102px #E2D0D3,
+      0 0 151px #E2D0D3;
+}
+.active{
+    text-shadow:
+    0 0 10px darkgreen,
+    0 0 21px darkgreen,
+    0 0 42px darkgreen,
+    0 0 82px #E2D0D3,
+    0 0 92px #E2D0D3,
+    0 0 102px #E2D0D3,
+    0 0 151px #E2D0D3;
+}
+@media only screen and (max-width: 970px) {
+    header{
+        margin-bottom: none;
+    }
+    .header
+    {
+        font-size:14px;
+    }
+    .logo
+    {
+        width:100%;
+        float:left;
+        text-align:center;
+    }
+    .menu
+    {
+        width:100%;
+        margin: 0 auto;
+    }
+    .menu ul
+    {
+        float:none;
+        margin-right:0px;
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    header{
+        margin-bottom: none;
+    }
+    .header
+    {
+        font-size:12px;
+    }
+    .logo h1
+    {
+        margin-bottom:1%;
+
+    }
+    .menu ul li
+    {
+        display:block;
+    }
+    }

@@ -1,0 +1,29 @@
+.searcher{
+    font-size: large;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 0.5% 1% 0.5% 1%;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 5px 15px darkgreen;
+    -moz-box-shadow: 0px 5px 15px darkgreen;
+    box-shadow: 0px 5px 15px darkgreen;
+}
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+@media only screen and (max-width: 970px) {
+    .searcher{
+        margin-right: 0px;
+        font-size: medium;
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .searcher{
+        font-size: medium;
+        margin-bottom: 0;
+    }
+    }
